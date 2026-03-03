@@ -1,0 +1,40 @@
+.informations {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    margin: -2em 2em;
+    padding: 1.2em;
+    position: absolute;
+    left: 43%;
+    transform: translateX(-50%);
+    width: calc(100% - 4em); /* respeita seu margin lateral */
+    z-index: 10;
+}
+
+.infor_details {
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-black);
+    z-index: 10;
+    gap: 0.5em;
+    
+
+}
+
+.infor_details h1 {
+    font-size: 20px;
+    
+}
+
+.infor_details p {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.address, 
+.Phone, 
+.Hours {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}

@@ -1,0 +1,119 @@
+.header {
+    margin: 0.5em auto;
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    align-items: center;
+
+}
+
+.logo img{
+    width: auto;
+    height: 3em;
+}
+
+.baber_name {
+    font-size: .8em;
+    font-family: var(--tittle);
+    text-align: center;
+
+
+}
+
+/* ---------- BOTÃO ÍCONE (Burger/X) ---------- */
+.iconButton {
+  background: transparent;
+  border: 0;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.iconButton .icon {
+  color: #faf9f9;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+/* Fechado: mostra burger */
+.iconButton .icon-open {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+.iconButton .icon-close {
+  opacity: 0;
+  transform: scale(0.85) rotate(-90deg);
+}
+
+/* Aberto: mostra X */
+.iconButton.open .icon-open {
+  opacity: 0;
+  transform: scale(0.85) rotate(90deg);
+}
+.iconButton.open .icon-close {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* ---------- OVERLAY MENU (abre/fecha animado) ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.92);
+
+  /* estado fechado */
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.overlay.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* conteúdo do menu */
+.overlay-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18vh;
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+}
+
+/* links */
+.overlay-content a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #faf9f9;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.overlay-content a:active {
+  transform: scale(0.98);
+}
+
+
+.overlay-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: 0;
+  color: #faf9f9;
+  cursor: pointer;
+  z-index: 1001;
+
+}
+

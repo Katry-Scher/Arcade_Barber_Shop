@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Sancreek&display=swap');
+
+
+:root {
+  --color-gray: #1d1d1e;
+  --color-blue: #1458A6;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --font-text: "Montserrat Alternates", sans-serif;
+  --tittle:  "Sancreek", serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  scroll-behavior: smooth;
+
+}
+
