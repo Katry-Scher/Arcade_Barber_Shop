@@ -1,6 +1,14 @@
 import "../styles/testimonials.css";
+import useEmblaCarousel from "embla-carousel-react"
 
 function Testimonials() {
+
+  const [emblaRef] = useEmblaCarousel({
+    loop: false,
+    align: "start"
+  })
+
+
     return (
         <>
             <section className="testimonials_container">
@@ -38,44 +46,34 @@ function Testimonials() {
             </section>
 
             <section className="testimonials_reviews">
-                
-                <div className="testimonials_reviews_card">
-                    <img src="/reviews_1.jpg" alt="website logo" />
-                    <div className="container_reviews">
-                        <h4><b>James R.</b></h4> 
-                        <p>"One of the best haircuts I've had in years. The barber really paid attention to the details and my beard has never looked this clean."</p> 
-                    </div>
-                </div>
-                
-                <div className="testimonials_reviews_card">
-                    <img src="/reviews_2.jpg" alt="website logo" />
-                    <div className="container_reviews">
-                        <h4><b>Michael T.</b></h4> 
-                        <p>"Great atmosphere and even better service. My fade and beard trim came out perfect. Definitely my new go-to barbershop."</p> 
-                    </div>
-                </div>
 
-                <div className="testimonials_reviews_card">
-                    <img src="/reviews_3.jpg" alt="website logo" />
-                    <div className="container_reviews">
-                        <h4><b>Daniel K.</b></h4> 
-                        <p>"The barber understood exactly what I wanted. Clean cut, sharp beard line, and a super relaxed environment."</p> 
-                    </div>
-                </div>
+                <div className="testimonials_embla" ref={emblaRef}>
+                    <div className="testimonials_embla__container">
 
-                <div className="testimonials_reviews_card">
-                    <img src="/reviews_1.jpg" alt="website logo" />
-                    <div className="container_reviews">
-                        <h4><b>Ryan S.</b></h4> 
-                        <p>"Top-quality service from start to finish. The haircut was precise and the beard shaping made a huge difference."</p> 
-                    </div>
-                </div>
+                        <div className="testimonials_embla__slide">
+                            <img src="/reviews_1.jpg" />
+                            <h4>Michael T.</h4>
+                            <p>"Great atmosphere and even better service. My fade and beard trim came out perfect. Definitely my new go-to barbershop."</p>
+                        </div>
 
-                <div className="testimonials_reviews_card">
-                    <img src="/reviews_1.jpg" alt="website logo" />
-                    <div className="container_reviews">
-                        <h4><b>Chris M.</b></h4> 
-                        <p>"Amazing experience. The barber took his time and made sure everything was perfect. My hair and beard look incredible."</p> 
+                        <div className="testimonials_embla__slide">
+                            <img src="/reviews_2.jpg" />
+                            <h4>Daniel K..</h4>
+                            <p>"The barber understood exactly what I wanted. Clean cut, sharp beard line, and a super relaxed environment."</p>
+                        </div>
+
+                        <div className="testimonials_embla__slide">
+                            <img src="/reviews_3.jpg" />
+                            <h4>Ryan S.</h4>
+                            <p>"Top-quality service from start to finish. The haircut was precise and the beard shaping made a huge difference."</p>
+                        </div>
+
+                        <div className="testimonials_embla__slide">
+                            <img src="/reviews_4.jpg" />
+                            <h4>Ryan S.</h4>
+                            <p>"Amazing experience. The barber took his time and made sure everything was perfect. My hair and beard look incredible."</p>
+                        </div>
+
                     </div>
                 </div>
 
@@ -88,5 +86,6 @@ function Testimonials() {
          
     )
 }
+
 
 export default Testimonials
