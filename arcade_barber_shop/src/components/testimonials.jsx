@@ -11,39 +11,6 @@ function Testimonials() {
 
     return (
         <>
-            <section className="testimonials_container">
-                <h1>Why Choose Us</h1>                
-            </section >
-            
-            <section className="testimonials_emojis"> 
-                
-                <div class="card">
-                    <div class="emojis">
-                        <button>Expert Barbers</button>
-                        <button>💈</button>
-                        <button>Unique Gamer Experience</button>
-                        <button>🎮</button>
-                        <button>Premium Atmosphere</button>
-                        <button>🔥</button>
-                        <button>Personalized Service</button>
-                        <button>🧔</button>
-                        <button>Trusted by Our Clients</button>
-                    </div>
-
-                    <div class="emojis">
-                        <button> </button>
-                        <button>&#128135; Expert Barbers</button>
-                        <button>💈</button>
-                        <button>Unique Gamer Experience</button>
-                        <button>🎮</button>
-                        <button>Premium Atmosphere</button>
-                        <button>🔥</button>
-                        <button>Personalized Service</button>
-                        <button>🧔</button>
-                        <button>Trusted by Our Clients</button>
-                    </div>
-                </div>
-            </section>
 
             <section className="testimonials_reviews">
 

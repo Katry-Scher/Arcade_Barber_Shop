@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    margin-top: 3em;
 }
 
 .testimonials_container h1 {
@@ -35,29 +34,34 @@ height: 150px;
 }
 
 /* testimonials_emojis */ 
+
 .card {
   width: auto;
-  background: rgba(0, 0, 0, 0.35);
   white-space: nowrap;
   overflow: hidden;
-  border-radius: 60px;
+  border: none;
   margin: 0.5em 0 2em 0 ;
+  background-color: transparent;
   
     
 }
 
 button {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0 5px;
   border: none;
   background-color: transparent;
   cursor: none;
   color: var(--color-white);
+  font-family: var(--font-text);
+
 }
+
 button:hover {
   transform: scale(1.1);
   transition: 0.5s ease;
 }
+
 .emojis {
   display: inline-block;
   justify-content: space-between;

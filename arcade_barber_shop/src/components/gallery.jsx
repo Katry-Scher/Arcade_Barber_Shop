@@ -1,3 +1,0 @@
-<section id="gallery">
-
-</section>

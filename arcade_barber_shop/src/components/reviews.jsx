@@ -1,3 +1,0 @@
-<section id="reviews">
-
-</section>

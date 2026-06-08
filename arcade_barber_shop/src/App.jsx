@@ -6,6 +6,8 @@ import OpenHours from './components/openHours'
 import Services from './components/services'
 import Appointment from './components/appointment'
 import Testimonials from './components/testimonials'
+import Location from './components/location'
+import Choose_us from './components/choose_us'
 
 
 function App() {
@@ -17,8 +19,15 @@ function App() {
       <Banner_hero />
       <OpenHours />
       <Services />
+      <Choose_us />
       <Appointment />
-      <Testimonials />
+      
+      <Testimonials />      
+      <Location /> 
+      
+
+
+      
       
     </>
   )
