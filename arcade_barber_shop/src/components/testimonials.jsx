@@ -12,7 +12,12 @@ function Testimonials() {
     return (
         <>
 
+
             <section className="testimonials_reviews">
+
+                <div className="testimonials_title">
+                    <h2>What Our Clients Say</h2>
+                </div>
 
                 <div className="testimonials_embla" ref={emblaRef}>
                     <div className="testimonials_embla__container">

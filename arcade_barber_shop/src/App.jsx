@@ -8,6 +8,7 @@ import Appointment from './components/appointment'
 import Testimonials from './components/testimonials'
 import Location from './components/location'
 import Choose_us from './components/choose_us'
+import Gallery from './components/gallery'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <Services />
       <Choose_us />
       <Appointment />
-      
+      <Gallery />
       <Testimonials />      
       <Location /> 
       
